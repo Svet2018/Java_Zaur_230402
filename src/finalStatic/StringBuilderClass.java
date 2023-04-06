@@ -7,6 +7,7 @@ public class StringBuilderClass {
         StringBuilder sb3 = new StringBuilder(50);// определена вместимость 50 симвлов
         StringBuilder sb5 = new StringBuilder(sb2);
 
+
         //Методы длины и емкости
         System.out.println("sb1.length() " + sb1.length());
         System.out.println("sb1.capacity() " + sb1.capacity());
@@ -38,9 +39,19 @@ public class StringBuilderClass {
         System.out.println(sb2.append(111));
         System.out.println(sb2.append(true));
 
+        StringBuilder strB = new StringBuilder("ok");
+        char[] array ={'p','r','i','v','e','t'};
+        strB.append(array,2,3);
+        System.out.println(strB);
+
         //Метод втавляет объект по указанному индексу
         System.out.println(sb2.insert(2, "  "));
         System.out.println(sb2.insert(sb2.length(), " расширенный метод append"));
+
+        StringBuilder strBl = new StringBuilder("Hello world");
+        char[] array6 ={'p','r','i','v','e','t'};
+        strBl.insert(2,array6,1,3);
+        System.out.println("strBl " + strBl);
 
         //Метод удаляет символы начиная с определенного индекса до определенного индекса
         StringBuilder sb10 = new StringBuilder("Hello, World!");
@@ -58,11 +69,7 @@ public class StringBuilderClass {
 
         //Метод заменяет символы, находящиеся между определенными индексами на строку
         StringBuilder sb13 = new StringBuilder("Строка будет перевернута");
-        System.out.println(sb12.replace(0,5, "Заменила "));
-
-
-
-
+        System.out.println(sb13.replace(0,5, "Заменила "));
 
 
 
@@ -71,6 +78,8 @@ public class StringBuilderClass {
 
 
     }
+
+
 
 
 }

@@ -3,6 +3,13 @@ package src.finalStatic;
 public class StringClass {
     public static void main(String[] args) {
         String s1 = new String("Привет и Пока");
+        StringBuilder ddd = new StringBuilder(("Hello"));
+        String ddd1 = new String(ddd);
+        System.out.println(ddd);
+        System.out.println(ddd1);
+        char[] array = new char[]{'p','r','i','v','e','t'};
+        String ffff = new String(array);
+        System.out.println(ffff);
         // Метод определения длины строки
         int a = s1.length();
         System.out.println(s1);
